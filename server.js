@@ -4,6 +4,10 @@ require("dotenv").config();
 
 const connectDB = require("./config/db");
 
+const iceCreamBaseRoutes = require("./routes/iceCreamBaseRoutes");
+const flavorRoutes = require("./routes/flavorRoutes");
+const toppingRoutes = require("./routes/toppingRoutes");
+
 const app = express();
 
 connectDB();
@@ -13,9 +17,18 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     res.json({
-        message: "Ben & Jerry's API werkt 🚀"
+        message: "Ben & Jerry's API werkt 🚀",
+        endpoints: {
+        bases: "/api/bases",
+        flavors: "/api/flavors",
+        toppings: "/api/toppings"
+        }
     });
 });
+
+app.use("/api/bases", iceCreamBaseRoutes);
+app.use("/api/flavors", flavorRoutes);
+app.use("/api/toppings", toppingRoutes);
 
 const PORT = process.env.PORT || 5000;
 
