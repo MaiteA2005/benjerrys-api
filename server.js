@@ -7,6 +7,7 @@ const connectDB = require("./config/db");
 const iceCreamBaseRoutes = require("./routes/iceCreamBaseRoutes");
 const flavorRoutes = require("./routes/flavorRoutes");
 const toppingRoutes = require("./routes/toppingRoutes");
+const orderRoutes = require("./routes/orderRoutes");
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.get("/", (req, res) => {
 app.use("/api/bases", iceCreamBaseRoutes);
 app.use("/api/flavors", flavorRoutes);
 app.use("/api/toppings", toppingRoutes);
+app.use("/api/orders", orderRoutes);
 
 const PORT = process.env.PORT || 5000;
 
