@@ -17,13 +17,16 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
+    app.get("/", (req, res) => {
     res.json({
         message: "Ben & Jerry's API werkt 🚀",
         endpoints: {
-        bases: "/api/bases",
-        flavors: "/api/flavors",
-        toppings: "/api/toppings"
-        }
+                bases: "/api/bases",
+                flavors: "/api/flavors",
+                toppings: "/api/toppings",
+                orders: "/api/orders"
+            }
+        });
     });
 });
 
