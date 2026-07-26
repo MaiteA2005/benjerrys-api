@@ -3,28 +3,24 @@ const mongoose = require("mongoose");
 const flavorSchema = new mongoose.Schema(
     {
         name: {
-        type: String,
-        required: true
-        },
-        description: {
-        type: String,
-        required: true
+            type: String,
+            required: true
         },
         color: {
-        type: String,
-        required: true
+            type: String,
+            required: true
         },
         price: {
-        type: Number,
-        default: 0
+            type: Number,
+            default: 0
         },
         isCustom: {
-        type: Boolean,
-        default: false
+            type: Boolean,
+            default: false
         },
         isActive: {
-        type: Boolean,
-        default: true
+            type: Boolean,
+            default: true
         }
     },
     {
