@@ -68,7 +68,7 @@ const flavors = [
 const toppings = [
     {
         name: "Slagroom",
-        modelUrl: "/models/whippedCream.glb",
+        color: "#FFFFFF",
         price: 0.5,
         position: { x: 0, y: 1.3, z: 0 },
         scale: 1,
@@ -76,7 +76,7 @@ const toppings = [
     },
     {
         name: "Kers",
-        modelUrl: "/models/cherry.glb",
+        color: "#F58FA8",
         price: 0.5,
         position: { x: 0, y: 1.8, z: 0 },
         scale: 0.6,
@@ -84,7 +84,7 @@ const toppings = [
     },
     {
         name: "Sprinkles",
-        modelUrl: "/models/sprinkles.glb",
+        color: "#FFD700",
         price: 0.4,
         position: { x: 0, y: 1.2, z: 0 },
         scale: 1,
@@ -92,7 +92,7 @@ const toppings = [
     },
     {
         name: "Cookie Chunks",
-        modelUrl: "/models/cookieChunks.glb",
+        color: "#D9B98C",
         price: 0.75,
         position: { x: 0, y: 1.25, z: 0 },
         scale: 0.8,
@@ -100,7 +100,7 @@ const toppings = [
     },
     {
         name: "Chocolate Sauce",
-        modelUrl: "/models/chocolateSauce.glb",
+        color: "#6B3E26",
         price: 0.6,
         position: { x: 0, y: 1.2, z: 0 },
         scale: 1,
@@ -108,7 +108,7 @@ const toppings = [
     },
     {
         name: "Strawberry Sauce",
-        modelUrl: "/models/strawberrySauce.glb",
+        color: "#F58FA8",
         price: 0.6,
         position: { x: 0, y: 1.2, z: 0 },
         scale: 1,

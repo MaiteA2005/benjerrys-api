@@ -6,9 +6,9 @@ const toppingSchema = new mongoose.Schema(
             type: String,
             required: true
         },
-        modelUrl: {
+        color: {
             type: String,
-            required: false
+            required: true
         },
         price: {
             type: Number,
